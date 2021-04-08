@@ -72,9 +72,9 @@
     </complexType>
 
     <complexType name="ingredients-type">
-        <all>
-            <element name="ingredient" type="string" minOccurs="1" maxOccurs="100"/>
-        </all>
+        <sequence>
+            <element name="ingredient" type="string" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
     </complexType>
 
 </schema>
