@@ -7,9 +7,10 @@
 
     <element name="candies">
         <complexType>
-            <all>
-                <element name="candy" type="tns:candy-type" minOccurs="1"/>
-            </all>
+            <sequence>
+                <element name="candy" type="tns:candy-type" minOccurs="1" maxOccurs="unbounded"/>
+                <element name="candy-chocolate" type="tns:chocolate-candy-type" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
         </complexType>
     </element>
 

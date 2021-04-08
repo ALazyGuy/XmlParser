@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candies
+        xmlns="https://github.com/ALazyGuy/XmlParser"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/ALazyGuy/XmlParser CandyScheme.xsd">
+
+    <candy production="Prod1">
+        <name>Candy-1A</name>
+        <energy>125</energy>
+        <type>caramel</type>
+        <value>
+            <proteins>10</proteins>
+            <fats>15</fats>
+            <hydrocarbons>7</hydrocarbons>
+        </value>
+        <release-date>2021-11-10</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy>
+
+    <candy production="Prod2">
+        <name>Candy-2A</name>
+        <energy>130</energy>
+        <type>caramel</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>10</fats>
+            <hydrocarbons>7</hydrocarbons>
+        </value>
+        <release-date>2021-11-11</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy>
+    <candy production="Prod3">
+        <name>Candy-3A</name>
+        <energy>125</energy>
+        <type>caramel</type>
+        <value>
+            <proteins>1</proteins>
+            <fats>1</fats>
+            <hydrocarbons>1</hydrocarbons>
+        </value>
+        <release-date>2021-11-12</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>strawberry</ingredient>
+        </ingredients>
+    </candy>
+    <candy production="Prod4">
+        <name>Candy-4A</name>
+        <energy>140</energy>
+        <type>caramel</type>
+        <value>
+            <proteins>11</proteins>
+            <fats>151</fats>
+            <hydrocarbons>17</hydrocarbons>
+        </value>
+        <release-date>2021-11-14</release-date>
+        <ingredients>
+            <ingredient>egg</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy>
+    <candy production="Prod5">
+        <name>Candy-5A</name>
+        <energy>170</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>13</proteins>
+            <fats>15</fats>
+            <hydrocarbons>7</hydrocarbons>
+        </value>
+        <release-date>2021-11-17</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>wheat</ingredient>
+        </ingredients>
+    </candy>
+
+    <candy production="Prod6">
+        <name>Candy-6A</name>
+        <energy>12</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>17</proteins>
+            <fats>175</fats>
+            <hydrocarbons>71</hydrocarbons>
+        </value>
+        <release-date>2021-12-10</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>bread</ingredient>
+        </ingredients>
+    </candy>
+
+    <candy production="Prod7">
+        <name>Candy-7A</name>
+        <energy>125</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>110</proteins>
+            <fats>151</fats>
+            <hydrocarbons>27</hydrocarbons>
+        </value>
+        <release-date>2021-12-11</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy>
+
+    <candy production="Prod8">
+        <name>Candy-8A</name>
+        <energy>1253</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>102</proteins>
+            <fats>125</fats>
+            <hydrocarbons>72</hydrocarbons>
+        </value>
+        <release-date>2021-12-13</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy>
+
+    <candy-chocolate production="Prod1" chocolate="white" filled="filled">
+        <name>Candy-1B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>30</fats>
+            <hydrocarbons>10</hydrocarbons>
+        </value>
+        <release-date>2021-11-09</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1" chocolate="white" filled="filled">
+        <name>Candy-2B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>30</fats>
+            <hydrocarbons>102</hydrocarbons>
+        </value>
+        <release-date>2021-12-09</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1" chocolate="white" filled="filled">
+        <name>Candy-3B</name>
+        <energy>1510</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>1</proteins>
+            <fats>10</fats>
+            <hydrocarbons>1</hydrocarbons>
+        </value>
+        <release-date>2021-11-11</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>meat</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1" chocolate="white">
+        <name>Candy-4B</name>
+        <energy>1502</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>55</proteins>
+            <fats>305</fats>
+            <hydrocarbons>150</hydrocarbons>
+        </value>
+        <release-date>2021-10-09</release-date>
+        <ingredients>
+            <ingredient>chocolate-milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy-chocolate>
+    <candy-chocolate production="Prod1" chocolate="dark" filled="filled">
+        <name>Candy-5B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>30</fats>
+            <hydrocarbons>104</hydrocarbons>
+        </value>
+        <release-date>2021-11-09</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>tomato</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1" chocolate="white" filled="filled">
+        <name>Candy-6B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>30</fats>
+            <hydrocarbons>10</hydrocarbons>
+        </value>
+        <release-date>2021-11-11</release-date>
+        <ingredients>
+            <ingredient>carrot</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1B" chocolate="dark" filled="filled">
+        <name>Candy-7B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>52</proteins>
+            <fats>30</fats>
+            <hydrocarbons>150</hydrocarbons>
+        </value>
+        <release-date>2021-11-09</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+    <candy-chocolate production="Prod1B" chocolate="white" filled="filled">
+        <name>Candy-8B</name>
+        <energy>150</energy>
+        <type>chocolate</type>
+        <value>
+            <proteins>5</proteins>
+            <fats>30</fats>
+            <hydrocarbons>10</hydrocarbons>
+        </value>
+        <release-date>2021-11-09</release-date>
+        <ingredients>
+            <ingredient>milk</ingredient>
+            <ingredient>sugar</ingredient>
+        </ingredients>
+    </candy-chocolate>
+
+</candies>
+
