@@ -73,7 +73,7 @@
 
     <complexType name="ingredients-type">
         <all>
-            <element name="ingredient" type="string" minOccurs="1"/>
+            <element name="ingredient" type="string" minOccurs="1" maxOccurs="100"/>
         </all>
     </complexType>
 
