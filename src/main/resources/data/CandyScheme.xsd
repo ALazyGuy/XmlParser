@@ -28,6 +28,7 @@
             <element name="type" type="tns:candy-taste-type"/>
             <element name="value" type="tns:value-type"/>
             <element name="release-date" type="date"/>
+            <element name="ingredients" type="tns:ingredients-type"/>
         </all>
         <attribute name="production" type="string" use="required"/>
     </complexType>
