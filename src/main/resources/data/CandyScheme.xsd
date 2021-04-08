@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified"
+        targetNamespace="https://github.com/ALazyGuy/XmlParser"
+        xmlns:tns="https://github.com/ALazyGuy/XmlParser">
+
+    <element name="candies">
+        <complexType>
+            <all>
+                <element name="candy" type="tns:candy-type" minOccurs="1"/>
+            </all>
+        </complexType>
+    </element>
+
+    <complexType name="candy-type">
+        <all>
+            <element name="name">
+                <simpleType>
+                    <restriction base="ID">
+                        <pattern value="#?(\w*\d*([A-C]|\-)+)+"/>
+                        <maxLength value="15"/>
+                        <minLength value="3"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="energy" type="positiveInteger"/>
+            <element name="type" type="tns:candy-taste-type"/>
+            <element name="value" type="tns:value-type"/>
+            <element name="release-date" type="date"/>
+        </all>
+        <attribute name="production" type="string" use="required"/>
+    </complexType>
+
+    <simpleType name="candy-taste-type">
+        <restriction base="string">
+            <enumeration value="caramel"/>
+            <enumeration value="chocolate"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="candy-filling-type">
+        <restriction base="string">
+            <enumeration value="empty"/>
+            <enumeration value="filled"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="chocolate-type">
+        <restriction base="string">
+            <enumeration value="white"/>
+            <enumeration value="dark"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="value-type">
+        <all>
+            <element name="proteins" type="positiveInteger"/>
+            <element name="fats" type="positiveInteger"/>
+            <element name="hydrocarbons" type="positiveInteger"/>
+        </all>
+    </complexType>
+
+    <complexType name="chocolate-candy-type">
+        <complexContent>
+            <extension base="tns:candy-type">
+                <attribute name="filled" type="tns:candy-filling-type" default="empty"/>
+                <attribute name="chocolate" type="tns:chocolate-type" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="ingredients-type">
+        <all>
+            <element name="ingredient" type="string" minOccurs="1"/>
+        </all>
+    </complexType>
+
+</schema>
