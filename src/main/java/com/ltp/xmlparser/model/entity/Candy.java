@@ -12,10 +12,11 @@ public class Candy {
     private CandyType candyType;
     private Value value;
     private Ingredients ingredients;
+    private String production;
 
     @Override
     public int hashCode() {
-        int result = name.hashCode() + energy * 31 + ((int)(release.getTime() % 100)) * 3 + candyType.hashCode() + value.hashCode() + ingredients.hashCode();
+        int result = name.hashCode() + energy * 31 + ((int)(release.getTime() % 100)) * 3 + candyType.hashCode() + value.hashCode() + ingredients.hashCode() + production.hashCode();
         return result;
     }
 
@@ -30,18 +31,20 @@ public class Candy {
         result = result && current.getCandyType() == candyType;
         result = result && current.getValue().equals(value);
         result = result && current.getIngredients().equals(ingredients);
+        result = result && current.getProduction().equals(production);
         return result;
     }
 
     @Override
     public String toString() {
-        String result = String.format("[ %s -> Energy: %d, Release: %s, Type: %s, Value: %s, Ingredients: %s]",
+        String result = String.format("[ %s -> Energy: %d, Release: %s, Type: %s, Value: %s, Ingredients: %s, Production: %s]",
                 name,
                 energy,
                 release.toString(),
                 candyType.toString(),
                 value.toString(),
-                ingredients.toString());
+                ingredients.toString(),
+                production);
         return result;
     }
 }
