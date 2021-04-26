@@ -25,7 +25,7 @@ public class Candy {
         if(o == this) return true;
         if(o == null || o.getClass() != this.getClass()) return false;
         Candy current = (Candy)o;
-        boolean result = current.getName() == name;
+        boolean result = current.getName().equals(name);
         result = result && current.getEnergy() == energy;
         result = result && current.getRelease().getTime() == release.getTime();
         result = result && current.getCandyType() == candyType;
