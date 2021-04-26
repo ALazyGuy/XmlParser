@@ -6,4 +6,9 @@
             <class name="test.com.ltp.xmlparser.parser.DomParserTest"/>
         </classes>
     </test>
+    <test name="sax">
+        <classes>
+            <class name="test.com.ltp.xmlparser.parser.SaxParserTest"/>
+        </classes>
+    </test>
 </suite>
