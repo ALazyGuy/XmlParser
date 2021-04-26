@@ -11,4 +11,9 @@
             <class name="test.com.ltp.xmlparser.parser.SaxParserTest"/>
         </classes>
     </test>
+    <test name="stax">
+        <classes>
+            <class name="test.com.ltp.xmlparser.parser.StaxParserTest"/>
+        </classes>
+    </test>
 </suite>
